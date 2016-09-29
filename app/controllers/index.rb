@@ -14,11 +14,16 @@ client = Yelp::Client.new({
   token_secret: ENV["YELP_TOKEN_SECRET"]
               })
 
+params = {
+  category_filter: 'nightlife'
+}
+response = client.search('Chicago', params)
 
-
-
-@answers = client.search('San Francisco')
-@result = @answers.businesses.sample.name
+# response = client.search('Chicago')
+@result = response.businesses.sample.name
+# if @result.categories
+# @result = @answers.businesses.sample
+# @result.categories
 
     # redirect "/"
   erb :'/show'
