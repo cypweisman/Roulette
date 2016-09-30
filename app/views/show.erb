@@ -1,19 +1,20 @@
-<div class="container-fluid bg-1 text-center">
-
- <!--  <p id="results" src="https://api.yelp.com/v3/businesses/search?term=<%= @answer %>" ></p> -->
+<div class="container">
+  <div class="jumbotron" id="header-risk">
+    <h1>Take a Risk Today</h1>
+    <p>Bored? Need something to do with your date? No problem! We have the perfect solution for you!</p>
+  </div>
 </div>
-
-
 
 <div class="container bg-2 text-center">
-  <h2> TAKE A RISK TODAY </h2>
+  <!-- <h2> TAKE A RISK TODAY </h2> -->
   <form id="my_event" action="/events" method="get">
     <% if @result %>
-      <p><%= @result %></p>
+      <p id="result"><%= @result %></p>
     <% end %>
-      <input id="sub-btn" type="submit" class="form-control">
+      <input id="sub-btn" class="btn btn-primary btn-block" type="submit" value="Be Bold!" class="form-control">
     </div>
   </form>
-  <img src="https://66.media.tumblr.com/f1299905002547f2ea978324add0a83a/tumblr_nhu8zj1Ngr1tmxne6o1_500.gif">
+  <div class="fluid-container">
+    <img id="my-img" src="https://66.media.tumblr.com/f1299905002547f2ea978324add0a83a/tumblr_nhu8zj1Ngr1tmxne6o1_500.gif">
+  </div>
 </div>
-
