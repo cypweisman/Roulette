@@ -1,0 +1,17 @@
+<%= erb :"/_errors", layout: false, locals: {errors: @errors} %>
+
+  <div class="container">
+    <h2>Register a New User</h2>
+    <form id="new_user" action="/users" method="POST">
+      <div class="form-group">
+        <input type="text" name="email" placeholder="Email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <input type="text" name="username" placeholder="Username" class="form-control" id="username">
+      </div>
+      <div class="form-group">
+        <input type="password" name="password" placeholder="Password" class="form-control" id="password">
+      </div>
+        <button type="submit" class="btn btn-default">Register</button>
+      </form>
+    </div>
