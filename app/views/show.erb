@@ -6,14 +6,13 @@
 </div>
 
 <div class="container bg-2 text-center">
-  <!-- <h2> TAKE A RISK TODAY </h2> -->
-  <form id="my_event" action="/events" method="get">
+  <form action="/events" method="get">
     <% if @result %>
       <p id="result"><%= @result %></p>
     <% end %>
       <input id="sub-btn" class="btn btn-primary btn-block" type="submit" value="Be Bold!" class="form-control">
-    </div>
   </form>
+</div>
   <div class="fluid-container">
     <img id="my-img" src="https://66.media.tumblr.com/f1299905002547f2ea978324add0a83a/tumblr_nhu8zj1Ngr1tmxne6o1_500.gif">
   </div>
